@@ -1,10 +1,16 @@
 package codecheck;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
 	public static void main(String[] args) {
-		for (int i = 0, l = args.length; i < l; i++) {
-			String output = String.format("argv[%s]: %s", i, args[i]);
-			System.out.println(output);
+
+		List<String> paramList = new ArrayList<String>();
+
+		for (int i = 0; i < args.length; i++) {
+			paramList.add(args[i]);
 		}
+
 	}
 }
